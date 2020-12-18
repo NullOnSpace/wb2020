@@ -17,7 +17,7 @@ key = the_app_key
 secret = the_secret_string
 redirect = http://yoursite.com/callback
 ```
-The app key and app secret can be fetched after you have apply in the official website.
+The app key and app secret can be fetched after you have applied in the official website.
 
 #### Configure `settings.py` extra options
 This is only neccessary if you plant this app to another django project,
