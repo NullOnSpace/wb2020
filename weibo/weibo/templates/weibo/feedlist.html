@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FeedList</title>
+  <style>
+    .media .media {
+      padding-left: 30px;
+      background-color: #9F9F9F;
+    }
+  </style>
+</head>
+<body>
+  {% for object in object_list %}
+    {% include 'weibo/post_snippet.html' with post=object %}
+  {% endfor %}
+</body>
+</html>

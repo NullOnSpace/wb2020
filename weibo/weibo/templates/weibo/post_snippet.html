@@ -1,0 +1,9 @@
+<div class="media">
+  <div class="media-body">
+    <h4 class="media-heading">{{ post.author.nickname }} <small>{{ post.create|date:"Y-m-d H:i" }}</small></h4>
+    {{ post.text }}
+    {% if post.origin %}
+      {% include 'weibo/post_snippet.html' with post=post.origin %}
+    {% endif %}
+  </div>
+</div>
